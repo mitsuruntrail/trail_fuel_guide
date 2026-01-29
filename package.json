@@ -1,0 +1,11 @@
+{
+  "name": "trail-run-fuel-app",
+  "version": "1.0.0",
+  "description": "Trail Run Fuel Guide",
+  "scripts": {
+    "build": "echo 'No build step necessary for static site'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
