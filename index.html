@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>トレイル補給ナビ</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="logo_v3.png" alt="Logo Icon" class="logo-icon">
+
+            </div>
+        </header>
+
+        <main>
+            <section class="card input-section">
+                <h2>コース・身体データ入力</h2>
+                <form id="calcForm">
+                    <!-- Personal Stats -->
+                    <div class="form-group-row">
+                        <div class="form-group third">
+                            <label for="height">身長 (cm)</label>
+                            <input type="number" id="height" placeholder="170" required min="100" max="250">
+                        </div>
+                        <div class="form-group third">
+                            <label for="weight">体重 (kg)</label>
+                            <input type="number" id="weight" placeholder="60" required min="30" max="150">
+                        </div>
+                        <div class="form-group third">
+                            <label for="age">年齢</label>
+                            <input type="number" id="age" placeholder="30" required min="1" max="100">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>性別</label>
+                        <div class="radio-group">
+                            <label class="radio-btn">
+                                <input type="radio" name="gender" value="male" checked>
+                                <span>男性</span>
+                            </label>
+                            <label class="radio-btn">
+                                <input type="radio" name="gender" value="female">
+                                <span>女性</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="distance">距離 (km)</label>
+                        <input type="number" id="distance" placeholder="例: 40" required min="1" step="0.1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="elevation">累積標高 (m)</label>
+                        <input type="number" id="elevation" placeholder="例: 2000" required min="0">
+                    </div>
+
+                    <div class="form-group">
+                        <label>走力設定 (行動イメージ)</label>
+                        <div class="radio-group">
+                            <label class="radio-btn">
+                                <input type="radio" name="speed" value="7.0">
+                                <span>速い<br><small>登りはできるだけ走る</small></span>
+                            </label>
+                            <label class="radio-btn">
+                                <input type="radio" name="speed" value="6.0" checked>
+                                <span>普通<br><small>登りは早歩き</small></span>
+                            </label>
+                            <label class="radio-btn">
+                                <input type="radio" name="speed" value="5.0">
+                                <span>ゆっくり<br><small>登りは歩く</small></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>胃腸の強さ</label>
+                        <div class="radio-group">
+                            <label class="radio-btn">
+                                <input type="radio" name="gi" value="60" checked>
+                                <span>強い<br><small>トラブルなし</small></span>
+                            </label>
+                            <label class="radio-btn">
+                                <input type="radio" name="gi" value="55">
+                                <span>普通<br><small>40km〜不調</small></span>
+                            </label>
+                            <label class="radio-btn">
+                                <input type="radio" name="gi" value="50">
+                                <span>弱い<br><small>20km〜不調</small></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label for="solidFood" class="toggle-label">
+                            <input type="checkbox" id="solidFood">
+                            <span class="custom-checkbox"></span>
+                            固形物を摂取する（3時間以上の場合のみ推奨）
+                        </label>
+                    </div>
+
+                    <button type="submit" class="calculate-btn">計算する</button>
+                </form>
+            </section>
+
+            <section id="results" class="results-section hidden">
+                <div class="card summary-card">
+                    <div class="result-row">
+                        <div class="result-item">
+                            <h3>予想タイム</h3>
+                            <p class="big-value" id="timeResult">--:--</p>
+                        </div>
+                        <div class="result-item">
+                            <h3>必要炭水化物</h3>
+                            <p class="big-value"><span id="carbResult">---</span> g</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card advice-card">
+                    <h3>補給アドバイス</h3>
+                    <div id="adviceContent" class="advice-content">
+                        <!-- JSで生成 -->
+                    </div>
+                </div>
+
+                <div class="card product-card">
+                    <h3>推奨購入リスト</h3>
+                    <p class="subtitle">Amazonで購入可能な推奨セット</p>
+                    <ul id="productList" class="product-list">
+                        <!-- JSで生成 -->
+                    </ul>
+
+                </div>
+
+                <!-- Share Section -->
+                <div id="socialContainer"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Trail Fuel Calculator</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

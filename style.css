@@ -1,0 +1,459 @@
+:root {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-primary: #ffffff;
+    --text-secondary: #aaaaaa;
+    --accent-color: #e6ff00;
+    /* Naak-like neon yellow/green */
+    --accent-hover: #c4d900;
+    --border-color: #333333;
+    --radius: 8px;
+    --spacing: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', 'Noto Sans JP', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.logo-icon {
+    width: 280px;
+    /* Adjust based on icon size preference */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.logo-text {
+    text-align: center;
+}
+
+.logo-en {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.logo-jp {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    /* White as requested */
+    margin-top: 5px;
+}
+
+/* h1 styling removed as it is replaced by logo */
+
+.beta {
+    font-size: 12px;
+    background: var(--accent-color);
+    color: #000;
+    padding: 2px 6px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+p {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2,
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.form-group-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-group.half {
+    width: 50%;
+}
+
+.form-group.third {
+    width: 33.33%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    background: #000;
+    border: 1px solid var(--border-color);
+    color: #fff;
+    border-radius: var(--radius);
+    font-size: 16px;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+/* Radio Buttons */
+.radio-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.radio-btn {
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+}
+
+.radio-btn input {
+    position: absolute;
+    opacity: 0;
+}
+
+.radio-btn span {
+    display: block;
+    padding: 12px 5px;
+    text-align: center;
+    background: #000;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.radio-btn small {
+    display: block;
+    font-size: 10px;
+    margin-top: 4px;
+    color: var(--text-secondary);
+}
+
+.radio-btn input:checked+span {
+    background: var(--accent-color);
+    color: #000;
+    border-color: var(--accent-color);
+    font-weight: 700;
+}
+
+.radio-btn input:checked+span small {
+    color: #333;
+}
+
+/* Checkbox */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+    background: #000;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked+.custom-checkbox {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+input[type="checkbox"]:checked+.custom-checkbox::after {
+    content: '✔';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-size: 12px;
+}
+
+.calculate-btn {
+    width: 100%;
+    padding: 15px;
+    background: var(--text-primary);
+    color: #000;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.calculate-btn:hover {
+    background: #ddd;
+}
+
+/* Results */
+.hidden {
+    display: none;
+}
+
+.summary-card {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.result-row {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.big-value {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--accent-color);
+    margin: 10px 0 0;
+}
+
+.advice-content {
+    background: #000;
+    padding: 15px;
+    border-radius: var(--radius);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.advice-content p {
+    margin-bottom: 10px;
+}
+
+.advice-block {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #333;
+}
+
+.advice-block:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.advice-title {
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Product List */
+.product-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+    gap: 15px;
+}
+
+.product-thumb {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    background: #333;
+}
+
+.product-name {
+    font-weight: 700;
+}
+
+.product-desc {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.product-qty {
+    background: #333;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.buy-all-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: var(--accent-color);
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: var(--radius);
+}
+
+.buy-all-btn:hover {
+    background: var(--accent-hover);
+}
+
+.subtitle {
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.prod-link {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 3px 0;
+    font-size: 13px;
+    transition: color 0.2s;
+}
+
+.prod-link:hover {
+    color: var(--accent-color);
+}
+
+.amazon-btn {
+    display: inline-block;
+    background-color: #f0c14b;
+    color: #111;
+    border: 1px solid #a88734;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 8px;
+    vertical-align: middle;
+    width: 110px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.amazon-btn:hover {
+    background-color: #f7dfa5;
+    cursor: pointer;
+}
+
+.product-row {
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    /* Ensure spacing */
+}
+
+/* Advice Box */
+.advice-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(230, 255, 0, 0.05);
+    border: 1px dashed var(--accent-color);
+    border-radius: var(--radius);
+}
+
+.advice-header {
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 8px;
+    font-size: 14px;
+    display: block;
+}
+
+.advice-msg {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.advice-rec {
+    font-size: 13px;
+    color: var(--text-secondary);
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 4px;
+    border-left: 3px solid var(--accent-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advice-rec strong {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.advice-reason {
+    font-size: 11px;
+    color: #888;
+    display: block;
+    margin-top: 4px;
+    margin-left: 18px;
+    /* Align with text start */
+}
