@@ -238,22 +238,22 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                     <div class="product-row">
                         <span><strong>Mag-on</strong> (マグネシウム入)</span>
-                        <a href="https://www.amazon.co.jp/s?k=Mag-on+%E3%82%A8%E3%83%8A%E3%82%B8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%AB" target="_blank" class="amazon-btn">Amazonで購入</a>
+                        <a href="https://amzn.to/4aiUwuB" target="_blank" class="amazon-btn">Amazonで購入</a>
                     </div>
                     
                     <div class="product-row">
                         <span><strong>俺は摂取す</strong> (リカバリ系)</span>
-                        <a href="https://www.amazon.co.jp/s?k=%E4%BF%BA%E3%81%AF%E6%91%82%E5%8F%96%E3%81%99" target="_blank" class="amazon-btn">Amazonで購入</a>
+                        <a href="https://amzn.to/4acH2Q2" target="_blank" class="amazon-btn">Amazonで購入</a>
                     </div>
                     
                     <div class="product-row">
                         <span><strong>GU Energy</strong> (濃厚)</span>
-                        <a href="https://www.amazon.co.jp/s?k=GU+Energy+Gel" target="_blank" class="amazon-btn">Amazonで購入</a>
+                        <a href="https://amzn.to/4kibSev" target="_blank" class="amazon-btn">Amazonで購入</a>
                     </div>
 
                     <div class="product-row">
                         <span><strong>MAURTEN 100</strong> (高機能)</span>
-                        <a href="https://www.amazon.co.jp/s?k=%E3%83%A2%E3%83%AB%E3%83%86%E3%83%B3+%E3%82%B8%E3%82%A7%E3%83%AB" target="_blank" class="amazon-btn">Amazonで購入</a>
+                        <a href="https://amzn.to/4kbdYwI" target="_blank" class="amazon-btn">Amazonで購入</a>
                     </div>
                 </div>
             </div>
@@ -272,17 +272,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                     <div class="product-row">
                         <span><strong>Enemochi</strong> (お餅)</span>
-                        <a href="https://www.amazon.co.jp/s?k=%E3%82%A8%E3%83%8D%E3%83%A2%E3%83%81" target="_blank" class="amazon-btn">Amazonで購入</a>
+                        <a href="https://amzn.to/4k8ewn3" target="_blank" class="amazon-btn">Amazonで購入</a>
                     </div>
                     
                     <div class="product-row">
                         <span><strong>スポーツようかん</strong></span>
-                        <a href="https://www.amazon.co.jp/s?k=%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E3%82%88%E3%81%86%E3%81%8B%E3%82%93" target="_blank" class="amazon-btn">Amazonで購入</a>
+                        <a href="https://amzn.to/4a1LiSa" target="_blank" class="amazon-btn">Amazonで購入</a>
                     </div>
                     
                     <div class="product-row">
                         <span><strong>PowerBar</strong> (海外定番)</span>
-                        <a href="https://www.amazon.co.jp/s?k=PowerBar+%E3%82%A8%E3%83%8A%E3%82%B8%E3%83%BC%E3%83%90%E3%83%BC" target="_blank" class="amazon-btn">Amazonで購入</a>
+                        <a href="https://amzn.to/46k019S" target="_blank" class="amazon-btn">Amazonで購入</a>
                     </div>
                 </div>
             </div>
@@ -301,24 +301,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                     <div class="product-row">
                         <span><strong>メダリスト</strong> (クエン酸)</span>
-                        <a href="https://www.amazon.co.jp/s?k=%E3%83%A1%E3%83%80%E3%83%AA%E3%82%B9%E3%83%88+%E3%82%AF%E3%82%A8%E3%83%B3%E9%85%B8" target="_blank" class="amazon-btn">Amazonで購入</a>
+                        <a href="https://amzn.to/4anqxl9" target="_blank" class="amazon-btn">Amazonで購入</a>
                     </div>
                     
                     <div class="product-row">
                         <span><strong>梅干し純</strong> (タブレット)</span>
-                        <a href="https://www.amazon.co.jp/s?k=%E6%A2%85%E5%B9%B2%E3%81%97%E7%B4%94" target="_blank" class="amazon-btn">Amazonで購入</a>
+                        <a href="https://amzn.to/3Z4czOT" target="_blank" class="amazon-btn">Amazonで購入</a>
                     </div>
 
                      <div class="product-row">
                         <span><strong>塩熱サプリ</strong> (電解質)</span>
-                        <a href="https://www.amazon.co.jp/s?k=%E5%A1%A9%E7%86%B1%E3%82%B5%E3%83%97%E3%83%AA" target="_blank" class="amazon-btn">Amazonで購入</a>
+                        <a href="https://amzn.to/3NZfwxL" target="_blank" class="amazon-btn">Amazonで購入</a>
                     </div>
                 </div>
             </div>
         `;
         productList.appendChild(electrolyteLi);
-        addProduct(products, 'BCAA/回復系', 'アミノバイタル GOLD', bcaaCount + '本', 'https://www.amazon.co.jp/s?k=%E3%82%A2%E3%83%9F%E3%83%8E%E3%83%90%E3%82%A4%E3%82%BF%E3%83%AB+GOLD', 'https://placehold.co/80x80/blue/fff?text=BCAA');
-        addProduct(products, '脱水予防', 'OS-1 パウダー', os1Packs + '袋', 'https://www.amazon.co.jp/s?k=OS-1+%E3%83%91%E3%82%A6%E3%83%80%E3%83%BC', 'https://placehold.co/80x80/ffffff/000080?text=OS-1');
+        addProduct(products, 'BCAA/回復系', 'アミノバイタル GOLD', bcaaCount + '本', 'https://amzn.to/469jDNY', 'https://placehold.co/80x80/blue/fff?text=BCAA');
+        addProduct(products, '脱水予防', 'OS-1 パウダー', os1Packs + '袋', 'https://amzn.to/3M1wYRy', 'https://placehold.co/80x80/ffffff/000080?text=OS-1');
 
         // Setup Buy Button (Combined Search) - REMOVED
         // buyAllBtn.href = ...;
@@ -369,27 +369,27 @@ document.addEventListener('DOMContentLoaded', () => {
         // --- 1. Product & URL Definition ---
         const products = {
             'アミノバイタル GOLD': {
-                url: 'https://www.amazon.co.jp/s?k=%E3%82%A2%E3%83%9F%E3%83%8E%E3%83%90%E3%82%A4%E3%82%BF%E3%83%AB+GOLD',
+                url: 'https://amzn.to/469jDNY',
                 defaultReason: '筋疲労サポート'
             },
             'メダリスト 塩ジェル': {
-                url: 'https://www.amazon.co.jp/s?k=%E3%83%A1%E3%83%80%E3%83%AA%E3%82%B9%E3%83%88+%E5%A1%A9%E3%82%B8%E3%82%A7%E3%83%AB',
+                url: 'https://amzn.to/4anqxl9',
                 defaultReason: '攣り予防・ミネラル'
             },
             'OS-1 パウダー': {
-                url: 'https://www.amazon.co.jp/s?k=OS-1+%E3%83%91%E3%82%A6%E3%83%80%E3%83%BC',
+                url: 'https://amzn.to/3M1wYRy',
                 defaultReason: '脱水・電解質補給'
             },
             'GU Energy（カフェイン）': {
-                url: 'https://www.amazon.co.jp/s?k=GU+Energy+Gel+Caffeine',
+                url: 'https://amzn.to/4kibSev',
                 defaultReason: '集中力・覚醒'
             },
             'Mag-on ジェル': {
-                url: 'https://www.amazon.co.jp/s?k=Mag-on+%E3%82%A8%E3%83%8A%E3%82%B8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%AB',
+                url: 'https://amzn.to/4aiUwuB',
                 defaultReason: 'エネルギー・Mg'
             },
             'アミノバイタル 粉末': {
-                url: 'https://www.amazon.co.jp/s?k=%E3%82%A2%E3%83%9F%E3%83%8E%E3%83%90%E3%82%A4%E3%82%BF%E3%83%AB+%E3%82%AF%E3%82%A8%E3%83%B3%E9%85%B8',
+                url: 'https://amzn.to/49ZuzPm',
                 defaultReason: '胃腸負担軽減'
             }
         };
