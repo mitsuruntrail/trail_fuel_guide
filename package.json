@@ -5,7 +5,11 @@
   "scripts": {
     "build": "echo 'No build step necessary for static site'"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "trail running",
+    "fuel",
+    "hydration"
+  ],
+  "author": "Trail Run Fuel Guide",
   "license": "MIT"
 }
