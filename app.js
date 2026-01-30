@@ -520,7 +520,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
 
                 <div style="display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
-                    <button id="nativeShareBtn" style="background:#e6ff00; color:#000; padding:12px 24px; border-radius:4px; border:none; font-weight:bold; font-size:14px; cursor:pointer; width:100%; max-width:300px; margin-bottom:10px;">画像をシェアする (アプリで開く)</button>
+                    <button id="nativeShareBtn" style="background:#e6ff00; color:#000; padding:12px 24px; border-radius:4px; border:none; font-weight:bold; font-size:14px; cursor:pointer; width:100%; max-width:300px; margin-bottom:10px;">画像をシェアする</button>
                 </div>
 
                 <div style="display:flex; justify-content:center; gap:10px;">
